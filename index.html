@@ -1,23 +1,457 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Design, web design, print design, web and print design, graphic design, print production, seattle print design, seattle web design" />
+<meta name="description" content="Wayne Shaw is a designer based in Seattle, WA, specializing in print and web design and production" />
+<title>Wayne A Shaw - Portfolio</title>
 
-<div class="home">
+<!-- media-queries.js -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!-- html5.js -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/media-queries.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css" media="screen" />
 
-  <h1 class="page-heading">Posts</h1>
+<meta name="viewport" content="width=device-width" />
+ 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<link href="http://fonts.googleapis.com/css?family=Exo:400,800" rel="stylesheet" type="text/css">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+</head>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<body data-spy="scroll">
+
+<!-- TOP MENU NAVIGATION -->
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+	
+			<a class="brand pull-left" href="#">
+			Wayne A. Shaw
+			</a>
+	
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+		
+			<div class="nav-collapse collapse">
+				<ul id="nav-list" class="nav pull-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#resume">Resum&eacute;</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div class="container content container-fluid" id="home">
+
+
+
+	<!-- HOME -->
+	<div class="row-fluid">
+  
+		<!-- SLIDESHOW FOR DESKTOP MEDIA QUERY -->
+		<div class="span12 visible-desktop">
+			  <!-- FlexSlider -->
+			  
+				<div class="flexslider">
+			  <ul class="slides">
+
+			  	<li>
+			  		<img src="img/Slideshow_PTSK.jpg" alt="work sample">
+			  	</li>
+			  	<li>
+			  		<img src="img/Slideshow_Nightingale.jpg" alt="work sample">
+			  	</li>
+                <li>
+			  		<img src="img/Slideshow_Stockcharts.jpg" alt="work sample">
+			  	</li>
+				<li>
+					<img src="img/Slideshow_Campus.jpg" alt="work sample">
+				</li>
+				<li>
+					<img src="img/Slideshow_Exorcist.jpg" alt="work sample">
+				</li>
+				<li>
+					<img src="img/Slideshow_Anchorman.jpg" alt="work sample">
+				</li>
+				<li>
+					<img src="img/Slideshow_Distress.jpg" alt="work sample">
+				</li>
+				<li>
+					<img src="img/Slideshow_Ernst.jpg" alt="work sample">
+				</li>
+				
+				
+				
+			  	
+			  </ul>
+			</div><!--end flexslider-->
+			
+		</div>
+	
+		<!-- MAIN DETAILS -->
+		<div class="span12">
+			
+			
+		
+			<!-- SLIDESHOW FOR TABLET MEDIA QUERY -->
+			<div class="hidden-desktop" id="phones">
+				<!-- FlexSlider -->
+				  
+					<div class="flexslider">
+				  <ul class="slides">
+				  	<li>
+			  		<img src="img/Slideshow_PTSK.jpg" alt="work sample">
+			  	</li>
+			  	<li>
+			  		<img src="img/Slideshow_Nightingale.jpg" alt="work sample">
+			  	</li>
+                <li>
+			  		<img src="img/Slideshow_Stockcharts.jpg" alt="work sample">
+			  	</li>
+				<li>
+					<img src="img/Slideshow_Campus.jpg" alt="work sample">
+				</li>
+				<li>
+					<img src="img/Slideshow_Exorcist.jpg" alt="work sample">
+				</li>
+				<li>
+					<img src="img/Slideshow_Anchorman.jpg" alt="work sample">
+				</li>
+				<li>
+					<img src="img/Slideshow_Distress.jpg" alt="work sample">
+				</li>
+				<li>
+					<img src="img/Slideshow_Ernst.jpg" alt="work sample">
+				</li>
+				  	
+				  </ul>
+				</div><!--end flexslider-->
+				
+			</div>
+            <!-- MAIN-NAME -->
+			<div id="main-name">
+			<h2>AHEAD&nbsp;OF&nbsp;SCHEDULE
+			 &amp;&nbsp;UNDER&nbsp;BUDGET</h2>
+			</div>
+			
+			
+			<!-- TAGLINE -->
+			<div id="tagline">
+				aka Faster &amp; Cheaper
+			</div>
+			<!-- DESCRIPTION -->
+			<div id="description">
+				<p>Originally from England, I have lived and worked in Seattle for over 20 years now.
+				In that time I have been employed as a production artist, graphic designer, art director and general go-to dogsbody.</p>
+				
+			</div>
+            
+					
+		</div>
+	</div>
+	
+	
+	
+	<!-- ABOUT & RESUME -->
+	<div class="row-fluid" id="about">
+	
+		<div class="span6">
+			<h2 class="page-title scroll_up">
+				About
+				<a href="#home" class="arrow-top">
+				<img src="img/arrow-top.png" alt="navigation arrow">
+				</a>
+			</h2>
+			
+			<p>Over the years I have been able to identify and remedy many inefficiencies within the creative — and production — workflows, allowing me to increase production volume without sacrificing creative quality.</p>
+			
+			<p>If you're looking for someone who won't utter the word ‘synergy’, or try to sell you on ‘re-branding’, but will just stay calm and get the job done, then drop me a line.</p>
+			
+		</div>
+	
+		<div class="span6 resume" id="resume">
+			<h2 class="page-title scroll_up">
+				Resum&eacute;
+				<a href="#home" class="arrow-top">
+				<img src="img/arrow-top.png" alt="navigation arrow">
+				</a>
+			</h2>
+			
+			<p>Over 20 years experience in the fast-paced, high-volume worlds of financial publishing, movie advertising and publicity, and home improvement advertising.</p>
+			
+			<p>My work has involved both print and online advertising, including working with CSS, HTML and Content Management Systems such as Joomla and Wordpress…</p>
+			
+			<!--<p class="resumeBtn">--><a href="img/WayneShaw-Resume.pdf">Download&nbsp;resum&eacute;&nbsp;here</a><!--</p>-->
+			
+		</div>
+	</div>
+	
+	
+	
+	<!-- PORTFOLIO -->
+	<div class="row-fluid" id="portfolio">
+		<h2 class="page-title scroll_up">
+				Portfolio
+				<a href="#home" class="arrow-top">
+				<img src="img/arrow-top.png" alt="navigation arrow">
+				</a>
+			</h2>
+		
+		<!-- PORTFOLIO IMAGES ROW 1-->
+		<ul class="thumbnails">
+			<li class="span3"><a id="1" class="fancybox" href="#inline1" data-fancybox-group="one" ><img src="img/Movie-ads-Thumb.jpg" alt="Movie-ads Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>Movie Advertising</h5></li>
+								
+			<li class="span3"><a id="2" class="fancybox" href="#inline2" data-fancybox-group="one" ><img src="img/Movie-promos-Thumb.jpg" alt="Movie Promos Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>Movie Promotional Materials</h5></li>
+								
+			<li class="span3"><a id="3" class="fancybox" href="#inline3" data-fancybox-group="one" ><img src="img/Stocks1-Thumb.jpg" alt="Print Ads Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>Magazine Print Ads</h5></li>
+								
+			<li class="span3"><a id="4" class="fancybox" href="#inline4" data-fancybox-group="one" ><img src="img/StocksArchive-Thumb.jpg" alt="Web Interface Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>XML-driven Archive &amp; Interface</h5></li>
+		</ul>	
+		
+		<!-- PORTFOLIO IMAGES ROW 2-->		
+		<ul class="thumbnails">
+			<li class="span3"><a id="5" class="fancybox" href="#inline5" data-fancybox-group="one" ><img src="img/StocksTour-Thumb.jpg" alt="Microsite Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>Tour Micro-site</h5></li>
+			
+			<li class="span3"><a id="6" class="fancybox" href="#inline6" data-fancybox-group="one" ><img src="img/StocksWeb-Thumb.jpg" alt="Web Assets Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>Web Assets &amp; HTML Emails</h5></li>
+			
+			<li class="span3"><a id="7" class="fancybox" href="#inline7" data-fancybox-group="one" ><img src="img/Article-Thumb.jpg" alt="Article Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>Illustrations for Magazine</h5></li>
+			
+			<li class="span3"><a id="8" class="fancybox" href="#inline8" data-fancybox-group="one" ><img src="img/CampusEye-Thumb.jpg" alt="Cover Illustration Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>Magazine Cover Illustrations</h5></li>
+		</ul>
+		
+		<!-- PORTFOLIO IMAGES ROW 3-->		
+		<ul class="thumbnails">
+			<li class="span3"><a id="9" class="fancybox" href="#inline9" data-fancybox-group="one" ><img src="img/Hardware1-Thumb.jpg" alt="Hardware Circular Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>Ernst Circulars</h5></li>
+			
+			<li class="span3"><a id="10" class="fancybox" href="#inline10" data-fancybox-group="one" ><img src="img/Hardware2-Thumb.jpg" alt="Hardware Circular Thumbnail 2" class="fancybox-thumbs" /></a>
+			<br><h5>Homewarehouse.com</h5></li>
+			
+			<li class="span3"><a id="11" class="fancybox" href="#inline11" data-fancybox-group="one" ><img src="img/BusCard-Thumb.jpg" alt="Business Card Illustration Thumbnail" class="fancybox-thumbs" /></a>
+			<br><h5>Business Card Illustration</h5></li>
+			
+			<li class="span3"><a id="12" class="fancybox" href="#inline12" data-fancybox-group="one" ><img src="img/EilisFlynn-Thumb.jpg" alt="" class="fancybox-thumbs" /></a>
+			<br><h5>Website Design</h5></li>
+		</ul>
+	</div>
+
+<!-- SAMPLE -->
+	<div id="inline1" style="display: none; overflow:hidden;">
+<h3>Movie Advertising</h3>
+<img src="img/Movie-ads.jpg" alt="Movie Ads" />
+<p>
+Promotional print advertising for Disney, DreamWorks &amp; MGM. For larger samples: <a href="img/2013-Chocolate.jpg">1</a> | <a href="img/2013-Movies.jpg">2</a></p>
+</div>
+<!-- SAMPLE -->
+<div id="inline2" style="display: none; overflow:hidden;">
+<h3>Movie Promotional Materials</h3>
+<img src="img/Movie-promos.jpg" alt="Movie Promos" />
+<p>
+Promotional give-aways and ticket packaging for movie screenings. For larger samples: <a href="img/2013-Anchor.jpg">1</a> | <a href="img/2013-Ticket.jpg">2</a> | <a href="img/2013-Exorcist.jpg">3</a> 
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline3" style="display: none; overflow:hidden;">
+<h3>Magazine Print Ads &amp; Mailers</h3>
+<img src="img/Stocks1.jpg" alt="Stocks &amp; Commodities Print Ads" />
+<p>
+Print ads for Stocks &amp; Commodities magazine. Design &amp; layout. For larger samples: <a href="img/2016-HouseAds1.jpg">1</a> | <a href="img/2016-HouseAds2.jpg">2</a> | <a href="img/2013-Mailers.jpg">3</a>
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline4" style="display: none; overflow:hidden;">
+<h3>XML Based Interface for Magazine&rsquo;s Online Article Archive</h3>
+<img src="img/StocksArchive.jpg" alt="Stocks &amp; Commodities Archive" />
+<p>
+Web GUI to allow searching &amp; downloading of articles from <a href="http://technical.traders.com/archive/volume-2014.asp?yr=2016#Jan">magazine archive</a>. Design &amp; coding (HTML &amp; XML).  For larger sample: <a href="img/2013-Archive.jpg">1</a>
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline5" style="display: none; overflow:hidden;">
+<h3>Online Magazine Tour</h3>
+<img src="img/StocksTour.jpg" alt="Stocks &amp; Commodities Online Tour" />
+<p>
+Micro-site showcasing the benefits of subscribing to Stocks &amp; Commodities magazine and associated website, Traders.com.<br />
+View the tour <a href="http://www.traders.com/tour/tour.html">here</a>. Design &amp; coding (HTML &amp; jQuery). For larger sample: <a href="img/2016-Tour.jpg">1</a>
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline6" style="display: none; overflow:hidden;">
+<h3>Various Online Assets &amp; HTML Emails</h3>
+<img src="img/StocksWeb.jpg" alt="Stocks &amp; Commodities Web Assets" />
+<p>
+Web assets for <a href="http://Traders.com">Traders.com</a>. Design &amp; production. HTML email samples: <a href="Email/TrialSubA.html">1</a> | <a href="Email/TrialSubB.html">2</a> | <a href="Email/TrialSubC.html">3</a> | <a href="Email/TrialSubD.html">4</a> | <a href="Email/PTSK.html">5</a> | <a href="Email/LastChance.html">6</a>
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline7" style="display: none; overflow:hidden;">
+<h3>Illustrations for Magazine Articles</h3>
+<img src="img/Article.jpg" alt="Magazine Article Illustrations" />
+<p>
+Illustrations to accompany Stocks &amp; Commodities magazine articles. Concept/design &amp; production. For larger sample: <a href="img/2013-MagArt.jpg">1</a>
+
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline8" style="display: none; overflow:hidden;">
+<h3>Cover Illustrations</h3>
+<img src="img/CampusEye.jpg" alt="Campus Eye Cover Illustrations" />
+<p>
+Pencil illustrations for cover of &lsquo;what&rsquo;s happenning&rsquo; style zine, Campus Eye.  Concept/design &amp; production. For larger sample: <a href="img/2013-Campus.jpg">1</a>
+
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline9" style="display: none; overflow:hidden;">
+<h3>Ernst Home Centers Advertising Circulars</h3>
+<img src="img/Hardware1.jpg" alt="Ernst Home Centers Mailers" />
+<p>
+Print advertising for national hardware chain. Design &amp; production. For larger sample: <a href="img/2013-Ernst.jpg">1</a>
+
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline10" style="display: none; overflow:hidden;">
+<h3>HomeWarehouse.com Advertising Circulars</h3>
+<img src="img/Hardware2.jpg" alt="HomeWarehouse.com Mailers" />
+<p>
+Print advertising for online hardware chain. Design &amp; production. For larger sample: <a href="img/2013-HW.jpg">1</a>
+ 
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline11" style="display: none; overflow:hidden;">
+<h3>Illustration &amp; Business Card</h3>
+<img src="img/BusCard.jpg" alt="Business Card &amp; Illustration" />
+<p>
+Pencil illustration and business card design. Concept/design, illustration &amp; production. For larger sample: <a href="img/2013-BusCard.jpg">1</a>
+ 
+</p>
+</div>
+<!-- SAMPLE -->
+<div id="inline12" style="display: none; overflow:hidden;">
+<h3>EilisFlynn.com Website</h3>
+<img src="img/EilisFlynn.jpg" alt="EilisFlynn.com Website" />
+<p>
+Website design for local author <a href="http://eilisflynn.com">Eilis Flynn</a>. Design &amp; modification of Wordpress themes. 
+</p>
+</div>	
+	<!-- CONTACT -->
+	<div class="row-fluid" id="contact">
+	
+		<h2 class="page-title scroll_up">
+				Contact
+				<a href="#home" class="arrow-top">
+				<img src="img/arrow-top.png" alt="navigation arrow">
+				</a>
+			</h2>
+		
+		<!-- CONTACT INFO -->
+		<div class="span4" id="contact-info">
+			<p>Please feel free to contact me regarding employment opportunities.</p>
+			<p>I am currently interested in full-time or long-term contract positions, as well as select freelance projects.</p>
+			<p><a href="mailto:wayne@wayneashaw.com">wayne@wayneashaw.com</a></p>
+		</div>
+		
+		<!-- CONTACT FORM -->
+		<div class="span7" id="contact-form">
+			<form method="post" name="contactform" action="contactengine.php" class="form-horizontal" id="contactform">
+				
+                <fieldset>
+					<div class="control-group">
+						<label class="control-label" for="Name">Name</label>
+						<div class="controls">
+							<input class="input-xlarge" type="text" id="Name" name="Name" placeholder="John Doe">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="Email">Email</label>
+						<div class="controls">
+							<input class="input-xlarge" type="text" id="Email" name="Email" placeholder="john@gmail.com">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="Subject">Subject</label>
+						<div class="controls">
+							<input class="input-xlarge" type="text" id="Subject" name="Subject" placeholder="General Inquiry">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="Message">Message</label>
+						<div class="controls">
+							<textarea class="input-xlarge" rows="3" id="Message" name="Message" placeholder="Your message..."></textarea>
+                            <p id="error">There were errors on the form.<br />
+Please make sure all fields are filled out correctly.</p>
+						</div>
+                        
+					</div>
+					<div class="form-actions">
+						<button type="submit" name="submit" class="btn btn-primary">SEND</button>
+                        
+					</div>
+                    
+				</fieldset>
+			</form>
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<!-- FOOTER -->
+<div class="footer container container-fluid" style="background-image:none ;">
+
+	<!-- COPYRIGHT -->
+	<div id="copyright">
+		Copyright &copy; 2017 Wayne A. Shaw.
+	</div>
+	
+	
 
 </div>
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script src="fancybox/jquery.fancybox.js"></script>
+<script src="fancybox/jquery.fancybox-buttons.js"></script>
+<script src="fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="validation.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>
