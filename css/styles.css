@@ -1,0 +1,280 @@
+@import url(../fonts/bebas.css);
+@import url(../fonts/droidsans.css);
+@import url(../fonts/League.css);
+ 
+ /***** STRUCTURE *****/
+ 
+ body { 
+	background: url('../img/EdinburghandMull.png') repeat-y;
+	background-position-x: 50%;
+	background-color: rgb(200, 200, 200);
+	}
+.container-fluid { 
+	/*background: url('../img/EdinburghandMull.png')no-repeat;*/
+	/*background-color: #666;*/
+	}
+	
+	
+h1, h2, h3, h4 {
+	/*text-shadow: white 0.02em 0.02em;*/
+	font-family: LeagueGothicRegular, BebasNeueRegular, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	}
+	
+h2 {
+	font-size: 2.3em;
+}
+h3 {
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+
+ul.thumbnails h5 {
+	padding-top:4px;
+}
+ .content {
+	padding-top:100px;
+	font-size: 1.1em;
+	line-height: 1.8em;
+	}
+	
+.content p {
+	font-size: 1.0em;
+	line-height: 1.8em;
+	margin-bottom: 1.1em;
+	margin-right: 1.1em;
+	}
+	
+
+/***** BODY *****/
+	
+.page-title {
+	padding: 100px 0 30px 0;
+	}
+	
+.arrow-top img {
+	margin: -7px 0 0 15px;
+	}
+
+
+	
+/***** NAVIGATION BAR *****/
+
+.navbar .brand {
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0px 1px 0px rgba(153,153,153,0.1),0 0 30px rgba(255, 255, 255, .125);
+}
+
+
+
+/***** HOMEPAGE *****/
+	
+#details {
+	position: relative;
+	float: right;
+	width: 527px;
+	margin-top: 80px;
+	padding-left: 20px;
+}
+
+#icon {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+}
+
+#main-name {
+	position: relative;
+	float: left;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#main-name h1 {
+	font-size: 5.5em;
+	font-size: 5.5em;
+	color: #ECECEC;
+	text-shadow: -1px 0 #B3B3B3, 0 1px #B3B3B3, 1px 0 #B3B3B3, 0 -1px #B3B3B3, #020763 0.03em 0.03em;
+	}
+	
+#version {
+	top: 30px;
+	position: relative;
+	float: left;
+}
+
+#tagline {
+	font-size: 1.4em;
+	margin-top: 2em;
+	clear: both;
+	font-style: italic;
+}
+
+#description {
+	margin-top: 2em;
+	margin-bottom: 1.8em;
+}
+
+	
+/***** CONTACT *****/
+
+#contact-form {
+	border-left: 1px solid #cccccc;
+	}
+	
+#contact-info {
+	padding-bottom:20px;
+	}
+	
+.form-actions {
+	background-color: transparent !important;
+	border-top: none;
+}	
+	
+/***** FOOTER *****/
+
+.footer {
+	font-size: 0.85em;
+	line-height: 1.5em;
+	padding: 15px 0;
+	border-top: 1px solid #CCC;
+}
+
+#copyright {
+	float:left;
+	}
+	
+#credits {
+	float:right;
+	}
+	
+
+
+/***** RESUME *****/
+
+/*.resumeBtn a, input[type=submit] {
+	font-weight: bold;
+	text-decoration: none;
+	padding: 2px 4px 1px;
+	*padding: 2px;
+	border: 1px solid rgb(212,198,174);
+	background-image: linear-gradient(bottom, rgb(230,220,202) 20%, rgb(243,236,226) 60%);
+	background-image: -o-linear-gradient(bottom, rgb(230,220,202) 20%, rgb(243,236,226) 60%);
+	background-image: -moz-linear-gradient(bottom, rgb(230,220,202) 20%, rgb(243,236,226) 60%);
+	background-image: -webkit-linear-gradient(bottom, rgb(230,220,202) 20%, rgb(243,236,226) 60%);
+	background-image: -ms-linear-gradient(bottom, rgb(230,220,202) 20%, rgb(243,236,226) 60%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.2, rgb(230,220,202)),
+		color-stop(0.6, rgb(243,236,226))
+	);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;	
+	border-radius: 6px;
+	box-shadow: rgba(0,0,0,.5) 0 1px 0;
+	color: #000;
+		zoom: 1;
+	}
+.resumeBtn a:focus, .resumeBtn a:hover, input[type=submit]:focus, input[type=submit]:hover {
+	padding: 1px 4px 2px;
+	background-image: linear-gradient(bottom, rgb(243,236,226) 20%, rgb(230,220,202) 60%);
+	background-image: -o-linear-gradient(bottom, rgb(243,236,226) 20%, rgb(230,220,202) 60%);
+	background-image: -moz-linear-gradient(bottom, rgb(243,236,226) 20%, rgb(230,220,202) 60%);
+	background-image: -webkit-linear-gradient(bottom, rgb(243,236,226) 20%, rgb(230,220,202) 60%);
+	background-image: -ms-linear-gradient(bottom, rgb(243,236,226) 20%, rgb(230,220,202) 60%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.2, rgb(243,236,226)),
+		color-stop(0.6, rgb(230,220,202))
+	);
+	text-shadow: 0 2px 3px rgb(255,255,255);
+	box-shadow: rgba(0,0,0,.5) 0 -1px 0;
+	color: red;	
+}	*/
+
+/****** FANCYBOX ******/
+.fancybox-thumbs {
+	opacity: .45;
+}
+
+.fancybox-thumbs:hover, .fancybox-thumbs .active, a.ActiveClass img {
+	opacity:1;
+	-webkit-box-shadow:0 5px 7px rgba(0, 0, 0, 0.35);
+	   -moz-box-shadow:0 5px 7px rgba(0, 0, 0, 0.35);
+	        box-shadow:0 5px 7px rgba(0, 0, 0, 0.35);
+	}
+
+/*THANK YOU*/
+.thanks {width: 360px; height: 190px; text-align: center; margin: auto; margin-top: 20%; background-color: rgba(255, 255, 255, .3); padding-top: 12px; border: 4px solid rgba(0, 0, 0, .5); box-shadow: 0px 2px 4px 4px #999;}
+a.return {
+display:inline-block;
+zoom:1;
+color: #ffffff;
+font:bold 12px Verdana, Arial, Helvetica, sans-serif;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+padding: 3px 6px;
+	text-decoration:none;
+	background: #ff3019; /* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMzAxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZjA0MDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+background: -moz-linear-gradient(top,  #ff3019 0%, #cf0404 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #ff3019 0%,#cf0404 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #ff3019 0%,#cf0404 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-8 */
+
+}
+a.return:hover,  a.return:focus {
+	border-bottom:0;
+	color:#fff;
+	background: #cf0404; /* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NmMDQwNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjMwMTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+background: -moz-linear-gradient(top,  #cf0404 0%, #ff3019 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cf0404), color-stop(100%,#ff3019)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #cf0404 0%,#ff3019 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #cf0404 0%,#ff3019 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #cf0404 0%,#ff3019 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #cf0404 0%,#ff3019 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019',GradientType=0 ); /* IE6-8 */
+}
+a.return:active { background:#000;}
+.thanks h4 { font-size:20px; margin:5px auto;}
+#error {
+	margin-bottom:0;
+	color:red;
+	font-size:12px;
+	display:none;
+}
+.needsfilled {
+	background:red !important;
+	color:white !important;
+}
